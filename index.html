@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page – Portfólio de Design</title>
+  <title>Portfólio de Design - Thais</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <nav style="position:sticky;top:0;z-index:50;background: #fafafacf;backdrop-filter:blur(10px);border-bottom: 1px solid #fbfbfb;">
+    <div style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;">
+      <strong>Thais Mariano</strong>
+        <div style="display:flex;gap:1rem;">
+          <a href="index.html" style="color:#9ca3af;text-decoration:none;">Início</a>
+          <a href="#portfolio" style="color: #020617;text-decoration:none;font-weight:600;">Experiências</a>
+          <a href="https://wa.me/5512981021517?text=Ol%C3%A1+quero+falar+com+a+Thais" style="color:#9ca3af;text-decoration:none;">Contato</a>
+          
+        </div>
+    </div>
+  </nav>
 
   <!-- HERO -->
   <header class="hero">
@@ -182,6 +194,81 @@
 
   </section>
 
+<section id="serv" class="section dark reveal">
+  <h2>Serviços Oferecidos</h2>
+
+  <div class="grid">
+    <div class="card outline">
+      <h3>UX/UI Design</h3>
+      <p>Design de interfaces focado em usabilidade, navegação e experiência.</p>
+    </div>
+
+    <div class="card outline">
+      <h3>Landing Pages</h3>
+      <p>Layouts estratégicos para apresentação de serviços e produtos.</p>
+    </div>
+
+    <div class="card outline">
+      <h3>Identidade Visual</h3>
+      <p>Construção de marcas fortes, coesas e profissionais.</p>
+    </div>
+
+    <div class="card outline">
+      <h3>Design Digital</h3>
+      <p>Artes e layouts voltados para comunicação digital e social media.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="Depoimentos" class="section">
+  <h2 class="section-title animate">💬 Depoimentos</h2>
+
+  <div class="testimonial-slider animate">
+    <div class="testimonial-track">
+      
+      <div class="testimonial-card">
+        <p>“O design ficou incrível e aumentou nossas conversões.”</p>
+        <strong>Mariana Lopes</strong>
+        <span>Empreendedora</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>“Profissional criativa, organizada e com ótima visão de UX.”</p>
+        <strong>Carlos Henrique</strong>
+        <span>CEO - Startup</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>“Artes modernas e alinhadas com a identidade da marca.”</p>
+        <strong>Juliana Rocha</strong>
+        <span>Social Media</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>“Entrega rápida e design extremamente profissional.”</p>
+        <strong>Rafael Mendes</strong>
+        <span>Gestor de Tráfego</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section reveal" hidden>
+  <h2>Meu diferencial</h2>
+
+  <div class="grid">
+    <div class="card highlight">
+      <p>✔ Design orientado à estratégia e objetivos do projeto</p>
+      <p>✔ Experiência focada no usuário (UX)</p>
+      <p>✔ Comunicação visual clara e profissional</p>
+      <p>✔ Atenção aos detalhes e consistência visual</p>
+      <p>✔ Projetos pensados para conversão e posicionamento</p>
+    </div>
+  </div>
+</section>
   <!-- CTA -->
   <section class="cta">
     <h2>Vamos criar um design que represente sua marca?</h2>
@@ -189,7 +276,7 @@
       Design profissional, estratégico e visualmente forte
       para posicionar sua marca no digital.
     </p>
-    <a href="#" class="btn dark">Solicitar Orçamento</a>
+    <a href="https://wa.me/5512981021517?text=Ol%C3%A1+quero+um+or%C3%A7amento" class="btn" target="_blank">Solicitar Orçamento</a>
   </section>
 
   <!-- MODAL -->
@@ -209,8 +296,31 @@
   </div>
 </div>
 
+<a href="#" class="whatsapp-float" onclick="abrirWhatsApp()">
+<!-- Ícone WhatsApp SVG -->
+<svg class="whatsapp-icon" viewBox="0 0 32 32" fill="white">
+<path d="M16 0C7.164 0 0 7.164 0 16c0 2.82.736 5.58 2.132 8.02L0 32l8.228-2.086A15.93 15.93 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.09c-2.55 0-5.04-.668-7.24-1.94l-.52-.3-4.88 1.24 1.3-4.76-.34-.54A13.05 13.05 0 012.91 16C2.91 8.77 8.77 2.91 16 2.91S29.09 8.77 29.09 16 23.23 29.09 16 29.09z"></path>
+<path d="M23.41 18.91c-.4-.2-2.36-1.16-2.73-1.29-.37-.13-.64-.2-.9.2-.26.4-1.03 1.29-1.26 1.55-.23.26-.46.3-.86.1-.4-.2-1.69-.62-3.22-1.98-1.19-1.06-2-2.37-2.23-2.77-.23-.4-.02-.62.18-.82.18-.18.4-.46.6-.7.2-.23.26-.4.4-.66.13-.26.07-.5-.03-.7-.1-.2-.9-2.18-1.23-2.98-.33-.8-.66-.7-.9-.7h-.77c-.26 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.31s1.43 3.84 1.63 4.11c.2.26 2.8 4.28 6.78 6 .95.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.11 2.36-.97 2.69-1.9.33-.93.33-1.73.23-1.9-.1-.16-.36-.26-.76-.46z"></path>
+</svg>
 
-  
+
+<span class="whatsapp-text">Fale comigo</span>
+</a>
+
 </body>
 <script src="script.js"></script>
+<script>
+  const whatsappBtn = document.querySelector('.whatsapp-float');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      whatsappBtn.style.opacity = '1';
+      whatsappBtn.style.transform = 'translateY(0)';
+    } else {
+      whatsappBtn.style.opacity = '0';
+      whatsappBtn.style.transform = 'translateY(40px)';
+    }
+  });
+</script>
+
 </html>
