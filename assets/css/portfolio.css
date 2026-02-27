@@ -1,0 +1,243 @@
+:root {
+      --bg: #fafafa;
+      --card: #111827;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    /* background: linear-gradient(180deg, #ffffff, #dddddd); */
+    color: #222;
+}
+
+.timeline-container {
+  position: relative;
+  /* max-width: 900px; */
+  margin: auto;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #000;
+}
+
+.timeline-item {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -9px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -9px;
+}
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 40px;
+  }
+
+  .timeline-item::before {
+    left: 3px;
+  }
+}
+
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color:#222;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    main {
+      padding: 2rem 1rem 4rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .filters button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid #9ca3af;
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .filters button.active, .filters button:hover {
+    background: gold;
+    color: #020617;
+    border-color: gold;
+}
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+    background: linear-gradient(180deg, #ffffff, #dbdbdb) padding-box, linear-gradient(135deg, #9ca3af, #9ca3af) border-box;
+    border: 1px solid #9ca3af;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 60px rgba(56, 189, 248, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex: 1;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+   .tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background: rgb(243 243 243);
+    color: #252711;
+    border: 1px solid;
+}
+
+    .card-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .card-actions a {
+      flex: 1;
+      text-align: center;
+      padding: 0.6rem 0;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+    background: gold;
+    color: #020617;
+}
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    .btn-outline {
+    border: 1px solid #9ca3af;
+    color: #9ca3af;
+}
+
+    .btn-outline:hover {
+      background: gold;
+    color: #020617;
+    border: 1px solid gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 2.5rem 1rem;
+      }
+      .card img {
+        height: 160px;
+      }
+    }
