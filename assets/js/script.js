@@ -38,7 +38,27 @@ const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 window.open(url, "_blank");
 }
 
-
+// Form submission to WhatsApp
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const email = document.getElementById("email").value;
+            const product = document.getElementById("product").value;
+            const message = document.getElementById("message").value;
+            
+            const whatsappMessage = `Olá, vim do site ThMariano-design e gostaria de solicitar um orçamento!\n\nNome: ${name}\nWhatsApp: ${phone}\nE-mail: ${email}\nProduto: ${product}\nMensagem: ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            window.open(`https://wa.me/5512981021517?text=${encodedMessage}`, "_blank");
+            
+            // Reset form
+            this.reset();
+            
+            // Show success message (you can customize this)
+            alert("Seu pedido foi enviado! Entraremos em contato em breve.");
+        });
 
 
 // naav
