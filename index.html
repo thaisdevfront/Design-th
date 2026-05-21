@@ -420,25 +420,25 @@
 
 <!-- MODAL -->
   <div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
+    <div class="modal-content">
+        <span class="close">&times;</span>
 
-    <img id="modalImage" alt="">
-    <h2 id="modalTitle"></h2>
-    <p id="modalDescription"></p>
+        <img id="modalImage" alt="">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
 
-    <h3>🎨 Elementos trabalhados</h3>
-    <p id="modalElements"></p>
+        <h3>🎨 Elementos trabalhados</h3>
+        <p id="modalElements"></p>
 
-    <h3>🎯 Classificação no portfólio</h3>
-    <p id="modalCategory"></p>
-  </div>
-</div>
+        <h3>🎯 Classificação no portfólio</h3>
+        <p id="modalCategory"></p>
+    </div>
+    </div>
 
   <section id="conhecimento">
     <div class="conhecimento container pt-5 pb-5" >
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-6 text-start">
                 <h1 class="sobre  scroll-item delay">
                     <strong>Conhecimento <span style="color: #38BDF8;">Técnico em Design</span></strong> 
                 </h1>
@@ -552,18 +552,145 @@
 </div>
 </section>
  
+ <!-- Contact Section -->
+    <section id="contato" class="text-white">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-12 animate-fade-in">
+                        <h1 class="scroll-item delay">
+                            <strong>
+                                Entre em <span style="color: #38BDF8;">contato</span>
+                            </strong> 
+                        </h1>
+                        <p class="text-lg scroll-item delay">
+                            Solicite seu orçamento personalizado
+                        </p>
+                        <div class="col-12">
+                            <!-- <h4 class=" scroll-item delay">
+                                <strong>Contato</strong> 
+                            </h4> -->
+                            <div style="display:flex;">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="tel:+5512981021517" style="color:#9ca3af;text-decoration:none;">+55 (12) 98102-1517</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <a href="https://wa.me//5512981021517" style="color: #38BDF8;text-decoration:none;font-weight:600;">+55 (12) 98102-1517</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:thais.devfrontend@gmail.com" style="color:#9ca3af;text-decoration:none;">thais.devfrontend@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <a href="#" style="color:#9ca3af;text-decoration:none;">São Paulo - SP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                            <div class="col-md-3">
+                                <h4 class=" scroll-item delay">
+                                    <strong>Mais</strong> 
+                                </h4>
+                                <a href="https://www.instagram.com/thmariano_d" style="color:#02071B;text-decoration:none;">
+                                <img src="assets/img/instagram.svg" alt="Description of the image" width="30" height="30">
+                                </a>
+                                <a href="https://github.com/thaisdevfront" style="color: #ffd700;text-decoration:none;font-weight:600;">
+                                    <img src="assets/img/github.svg" alt="Description of the image" width="30" height="30">
+                                </a>
+                                <a href="https://www.linkedin.com/in/thais-mariano-dev/" style="color:#02071B;text-decoration:none;">
+                                    <img src="assets/img/linkedin.svg" alt="Description of the image" width="30" height="30">
+                                </a>
+                                <div style="display:flex;" hidden>
+                                    <ul>
+                                        <li>
+                                        <a href="index.html" style="color:#9ca3af;text-decoration:none;">Início</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio.html" style="color: #ffd700;text-decoration:none;font-weight:600;">Experiências</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://wa.me/5512981021517?text=Ol%C3%A1+quero+falar+com+a+Thais" style="color:#9ca3af;text-decoration:none;">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 scroll-item delay">
+                    <form id="contact-form">
+
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <label for="name" class="pb-2"  hidden>Nome completo</label>
+                                <input type="text" id="name" placeholder="Nome completo..." required class="w-100 px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:border-secondary focus:ring-2 focus:ring-secondary outline-none transition">
+                            </div>
+                            <div  class="col-md-12">
+                                </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="d-block">
+                                <label for="phone" class="pb-2" hidden>WhatsApp</label>
+                                <input type="tel" id="phone" placeholder="WhatsApp..." required class="w-100 px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:border-secondary focus:ring-2 focus:ring-secondary outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="d-block">
+                                <label for="email" class="pb-2"  hidden>E-mail</label>
+                                <input type="email" id="email" placeholder="E-mail..."  class="w-100 px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:border-secondary focus:ring-2 focus:ring-secondary outline-none transition">
+                            </div>
+                        </div>
+                        
+                        <label for="product" class="block pb-2" hidden>Produto de interesse</label>
+                            <select id="product"class="w-100 px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:border-secondary focus:ring-2 focus:ring-secondary outline-none transition">
+                                <option value="">Produto de interesse...</option>
+                                <option value="Logotipo">Logotipo</option>
+                                <option value="BrandingCompleto">Branding Completo</option>
+                                <option value="SocialMedia">Social Media</option>
+                                <option value="DesignGrafico">Design Gráfico</option>
+                                <option value="LandingPage">LandingPage Design</option>
+                                <option value="outro">Outro</option>
+                            </select>
+
+                        <div class="row pt-2 pb-2">
+                            <div class="d-block">
+                                <label for="message" class="block mb-2" hidden>Mensagem</label>
+                                <textarea id="message" placeholder="Mensagem..." rows="3" class="w-100 px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:border-secondary focus:ring-2 focus:ring-secondary outline-none transition"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-w">
+                            Enviar pedido
+                        </button>
+                                            
+                    </form>
+                </div>
+                 
+            </div>
+            
+        </div>
+    </section>
+
 <footer style="background-color: #01040F;">
     <div class="container pt-5">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h1 class="scroll-item delay">
                     <strong>Th</br><span style="color: #38BDF8;">Mariano</span> -</strong> 
                 </h1>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <h4 class=" scroll-item delay">
-                    <strong>Navegação</strong> 
+                    <strong>Links</strong> 
                 </h4>
                 <div style="display:flex;">
                     <ul>
@@ -582,7 +709,35 @@
                     </ul>
                 </div>
             </div>
+
             <div class="col-md-4">
+                <h4 class=" scroll-item delay">
+                    <strong>Contato</strong> 
+                </h4>
+                <div style="display:flex;">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+5512981021517" style="color:#9ca3af;text-decoration:none;">+55 (12) 98102-1517</a>
+                        </li>
+                        
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me//5512981021517" style="color: #38BDF8;text-decoration:none;font-weight:600;">+55 (12) 98102-1517</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:thais.devfrontend@gmail.com" style="color:#9ca3af;text-decoration:none;">thais.devfrontend@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" style="color:#9ca3af;text-decoration:none;">São Paulo - SP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
                 <h4 class=" scroll-item delay">
                     <strong>Mais</strong> 
                 </h4>
@@ -610,9 +765,8 @@
                 </div>
             </div>
             
-            
-        
         </div>
+
         <div class="row text-center pt-3">
             <p>© 2026 Thais Mariano — Portfólio de Design | UI & Visual</p>
         </div>
@@ -632,6 +786,21 @@
 
 <script src="assets/js/script.js"></script>
 <script src="assets/js/all.js"></script>
+<script>
+    const contactInfo = [
+            { "icon": "fas fa-phone-alt", "text": "(12) 99143-9999" },
+            { "icon": "fas fa-envelope", "text": "doloresatelie@gmail.com" },
+            { "icon": "fas fa-map-marker-alt", "text": "Tremembé - SP" }
+        ];
+        
+        const socialLinks = [
+            { "icon": "fab fa-instagram", "href": "https://www.instagram.com/dolores.atelie/", "label": "Instagram" },
+            // { "icon": "fab fa-facebook-f", "href": "#", "label": "Facebook" },
+            { "icon": "fab fa-whatsapp", "href": "https://wa.me/5512991439999", "label": "WhatsApp" }
+            // { "icon": "fab fa-pinterest-p", "href": "#", "label": "Pinterest" }
+        ];
+
+</script>
  
 </body>
 </html>
