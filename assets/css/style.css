@@ -22,6 +22,13 @@ p {
 }
 
 
+button.btn-w {
+    background-color: #38bdf8;
+    color: #02071b;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
 /* ESTADO INICIAL */
 .scroll-item {
   opacity: 0;
@@ -167,8 +174,16 @@ button.close {
     color: black;
 }
 ul {
-  padding-left: 20px;
+    padding-left: 20px;
+    list-style: none;
 }
+
+svg.svg-inline--fa {
+    color: #38bdf8;
+    margin-right: 10px;
+}
+
+
 .links {
   display: flex;
   gap: 15px;
@@ -280,6 +295,22 @@ ul {
     font-size: 30px;
 }
 
+#contato .container.pt-5.pb-5 {
+    padding: 0px 30px;
+}
+#contato .mb-12.animate-fade-in {
+    padding: 0px 0px 50px 0px;
+}
+footer .container.pt-5 {
+    padding: 0px 30px;
+}
+footer .col-md-4, .col-md-3, .col-md-2 {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 0px 0px 30px;
+    }
+
   .menu {
         position: fixed;
         top: 70px;
@@ -300,12 +331,7 @@ ul {
   .menu li {
     margin-bottom: 16px;
   }
-  footer .col-md-4 {
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    padding: 0px 0px 30px;
-}
+   
 
 }
 
