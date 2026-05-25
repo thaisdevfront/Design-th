@@ -13,10 +13,10 @@ body {
 .pt-5, .pb-5 {
     padding-top: 5rem !important;
 }
-section {
+/* section {
   height: 100vh;
   
-}
+} */
 p {
     color: darkgray;
 }
@@ -457,7 +457,7 @@ span.elem-retet3 img {
 
 /* sobr */
 section#sobre{
-    height: 100vh;
+    height: auto;
 }
 .col.sobre-text {
     align-items: center;
@@ -552,6 +552,8 @@ span.elem-retet3 img {
         align-items: center;
         z-index: 22;
         width: 90%;
+        text-align: left;
+        padding: 0px 30px;
     }
 
 
